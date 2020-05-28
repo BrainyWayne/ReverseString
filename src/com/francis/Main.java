@@ -19,15 +19,11 @@ public class Main {
 
 
     static void reverseString(char[] arr){
-        char[] reversedChars = new char[arr.length];
 
-        for(int i = 0; i < arr.length; i++){
-            reversedChars[i] = arr[arr.length - i - 1];
+        for(int i = arr.length - 1; i >= 0; i--){
+            printout(String.valueOf(arr[i]));
         }
 
-        for(int i = 0; i < reversedChars.length; i++){
-            printout(String.valueOf(reversedChars[i]));
-        }
 
     }
 
