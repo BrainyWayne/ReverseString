@@ -4,24 +4,18 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-    String word;
-    char[] arr;
 
     printout("Enter the string to reverse\n");
     Scanner scanner = new Scanner(System.in);
-    word = scanner.nextLine();
-    arr = word.toCharArray();
-
-    reverseString(arr);
-
+    reverseString(scanner.nextLine());
 
     }
 
 
-    static void reverseString(char[] arr){
+    static void reverseString(String string){
 
-        for(int i = arr.length - 1; i >= 0; i--){
-            printout(String.valueOf(arr[i]));
+        for(int i = string.length() - 1; i >= 0; i--){
+            printout(String.valueOf(string.charAt(i)));
         }
 
 
